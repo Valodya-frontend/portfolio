@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    transition: all 1s linear;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.box {
+    width: 47vh;
+    height: 47vh;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    position: relative;
+    z-index: 789 !important;
+}
+
+section {
+    position: relative;
+    width: 33.333333%;
+    height: 33.333333%;
+    transform: rotateZ(0deg) scale(1);
+    transition: all 2s;
+}
+
+.items {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 1px lime inset, 0 0 1px lime inset, 0 0 1px lime inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.startGame {
+    background: transparent;
+    color: black;
+    border: none;
+    box-shadow: 0 0 3px lime inset, 0 0 3px lime inset, 0 0 3px lime inset;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: .5rem 7.5rem;
+    -webkit-box-reflect: below 3px linear-gradient(transparent 30%, black);
+    text-shadow: 0 0 3px lime, 0 0 3px lime, 0 0 3px lime;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 17%;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    background: url("1.gif");
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.countText {
+    color: lime;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    font-family: cursive;
+    font-size: 3rem;
+    transform: translateX(-50%);
+    font-weight: 100;
+}
+
+h1{
+    color: lime;
+    right: 50%;
+    top: 20%;
+    padding: 2px;
+    gap: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: lime;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+h3{
+    color: lime;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

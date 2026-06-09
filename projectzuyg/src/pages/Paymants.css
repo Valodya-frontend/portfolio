@@ -1,0 +1,135 @@
+.paymant {
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+    bottom: 0%;
+    z-index: 987987987 !important;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    overflow: hidden !important;
+    transition: all 2s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.paymant>button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.paymant>button>svg {
+    color: #000;
+    font-size: 150px;
+    filter: drop-shadow(0 0 4px tan) drop-shadow(0 0 4px tan) drop-shadow(0 0 4px tan);
+}
+
+.paymantBox {
+    width: 70%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalCart {
+    width: 800px;
+    height: 100%;
+    position: relative;
+}
+
+.back,
+.front {
+    width: 75vh;
+    height: 40vh;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 989999999 !important;
+}
+
+.front {
+    background: url("../upDown/cardFront.png");
+    background-size: 163% 260% !important;
+    background-position: 50% 10% !important;
+    background-repeat: no-repeat !important;
+}
+
+.back {
+    background: url("../upDown/cardBack.png");
+    background-size: 162% 258% !important;
+    background-position: 50% 82% !important;
+    background-repeat: no-repeat !important;
+}
+
+.inputBox>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.inputBox>div>input {
+    width: 550px;
+    padding: 3px 12.5px;
+    font-size: 30px;
+    background: black;
+    border: none;
+    border-top: 1px solid tan;
+    border-left: 1px solid tan;
+    color: tan;
+    letter-spacing: .3rem;
+    text-transform: capitalize;
+    text-align: right;
+    overflow: hidden !important;
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back > .cvv {
+    color: black;
+    font-size: 40px;
+    font-style: oblique;
+    letter-spacing: 5px;
+}
+
+section {
+    margin-left: 10.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 160px;
+}
+
+.numbers {
+    color: tan;
+    font-size: 40px;
+}
+
+.front {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: tan;
+}
+
+.validThru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 25px;
+}
+
+/* .front {
+    opacity: 0;
+} */

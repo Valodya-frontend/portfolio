@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+    font-family: cinzel;
+}
+
+#root {
+    background: black;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url('fonts/cinzel.ttf');
+}

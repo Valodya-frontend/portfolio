@@ -1,0 +1,168 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0b2d4b;
+color:white;
+}
+
+.menu{
+position:absolute;
+top:70px;
+right:40px;
+background:#0b2d4b;
+width:260px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+display:none;
+}
+
+.closeMenu{
+text-align:right;
+font-size:22px;
+cursor:pointer;
+padding:10px 15px;
+}
+
+.menu ul{
+list-style:none;
+padding:0 20px 20px;
+margin:0;
+}
+
+.menu li{
+padding:10px;
+border-bottom:1px solid #f5b633;
+ cursor:pointer;
+}
+
+.menu li:hover{
+background: #0b2d4b;
+opacity: 0.9;
+transform: translateY(5px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.hero{
+height:500px;
+background:url("https://images.unsplash.com/photo-1513258496099-48168024aec0") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.searchBox{
+background:#F5F5F5;
+padding:30px;
+border-radius:20px;
+width:260px;
+text-align:center;
+}
+
+.searchBox select{
+width:100%;
+padding:10px;
+margin:10px 0;
+border: none;
+border-radius: 10px;
+}
+
+.searchBox button{
+width:100%;
+padding:10px;
+background:#f5b633;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.programmes{
+text-align:center;
+padding:60px 20px;
+background:#f4f4f4;
+}
+
+h2{
+    color: #0b2d4b;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+color:#0b2d4b;
+position:relative;
+margin-bottom:40px;
+}
+
+.title::after{
+content:"";
+width:60px;
+height:4px;
+background:#f5b633;
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+bottom:-10px;
+border-radius:2px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:280px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition: 0.3s;
+cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+
+h3{
+    color: #0b2d4b;
+}
+
+.why{
+text-align:center;
+padding:60px 20px;
+}
+
+.locations{
+text-align:center;
+padding:60px 20px;
+background:#f4f4f4;
+}
+
+footer{
+background:#0b2d4b;
+color:white;
+padding:40px;
+}
+
+.footerBox{
+display:flex;
+justify-content:space-around;
+}
+
+.copy{
+text-align:center;
+margin-top:20px;
+}
